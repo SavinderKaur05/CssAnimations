@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Frame Animations</title>
+    <style>
+
+        .box {
+            background-color: skyblue;
+            width: 250px;
+            height: 250px;
+            color: aliceblue;
+            animation-name: secondAnimation;
+            animation-duration: 6s;
+            animation-iteration-count: 1;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes secondAnimation {
+            0%
+            {
+            margin-top: 0px;
+            margin-left: 0px;
+            background-color: skyblue;
+            }
+            25%
+            {
+             margin-top:250px;
+             margin-left:0px;
+             background-color: aquamarine;
+            }
+            75%
+            {
+              margin-top:250px;
+              margin-left: 1200px;
+              background-color: lightpink;
+            }
+            100%
+            {
+              margin-top:0px;
+              margin-left: 1200px;
+              background-color: lightsalmon;
+              border-radius: 400px;
+            }
+        }
+
+        @keyframes box {
+            from {
+                width: 250px;
+            }
+
+            to {
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+    </div>
+</body>
+
+</html>
